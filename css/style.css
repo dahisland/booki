@@ -116,12 +116,6 @@ main {
 section.rechercher {
     padding-bottom:30px;
 }
-    .rechercher__icones {
-        width:44px;
-        height:44px;
-        line-height:44px;
-        text-align:center;
-    }
 
 /* CHAMPS DE RECHERCHE */
 
@@ -133,6 +127,18 @@ form.barre-de-recherche {
     margin-bottom:30px;
     font-weight:700;
 }
+    .rechercher__icones--label {
+        width:44px;
+        height:44px;
+        line-height:45px;
+        text-align:center;
+    }
+    input#barre-de-recherche__champs {
+        width:190px;
+        padding-left:10px;
+        padding-right:10px;
+        outline:none;
+    }
     .barre-de-recherche__champs--bordure-gris {
         border:1px solid #F2F2F2;
     }
@@ -141,11 +147,6 @@ form.barre-de-recherche {
     }
     .barre-de-recherche__champs--arrondi {
         border-radius:13px 0px 0px 13px;
-    }
-    input#barre-de-recherche__champs {
-        width:190px;
-        padding-left:10px;
-        outline:none;
     }
     input#barre-de-recherche__champs:focus {
         background-color:#F2F2F2;
@@ -178,6 +179,9 @@ form.barre-de-recherche {
 /* BOUTONS DE FILTRES */
 
 .rechercher__icones--filtres {
+    width:48px;
+    height:48px;
+    line-height:45px;
     color:#0065FC;
     background-color:#DEEBFF;
     border:2px solid transparent;
@@ -318,34 +322,38 @@ aside.hebergement-populaire {
         a.conteneur__carte-populaire {
             display:block;
             width:100%;
-            max-height:150px;
-            margin-bottom:30px;
-            position:relative;
-            font-size:13px;
-            height:130px;
             background-color:#FFFFFF;
             border:5px solid #FFFFFF;
             border-radius:13px;
             box-shadow:1px 1px 8px #D9D9D9;
+            height:130px;
+            margin-bottom:30px;
+            overflow:hidden;
         }
         a.conteneur__carte-populaire:hover {
             outline:2px dotted #0065fc;
         }
             picture.carte-populaire__img {
-                width:30%;
+                width:35%;
                 height:100%;
                 margin-right:10px;
-                border-radius:11px 0px 0px 11px;
                 float:left;
                 overflow:hidden;
             }
-            p.carte-populaire__icones {
-                position:absolute;
-                color:#0065FC;
-                font-size:12px;
-                bottom:0;
-                left:33%;
+            div.carte-populaire__description {
+                display:flex;
+                flex-direction:column;
+                justify-content:space-between;
+                height:100%;
+                padding:7px 0px;
             }
+                div.description__texte p {
+                    font-size:13px;
+                }
+                p.description__icones {
+                    color:#0065FC;
+                    font-size:12px;
+                }
 
 /*----------------------- SECTION ACTIVITE */
 

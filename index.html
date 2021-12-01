@@ -50,7 +50,7 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 <form class="barre-de-recherche">
-                    <label for="barre-de-recherche__champs" class="barre-de-recherche__champs--arrondi barre-de-recherche__champs--bordure-gris barre-de-recherche__champs--fond-gris"><i class="fas fa-map-marker-alt rechercher__icones"></i></label>
+                    <label for="barre-de-recherche__champs" class="barre-de-recherche__champs--arrondi barre-de-recherche__champs--bordure-gris barre-de-recherche__champs--fond-gris"><i class="fas fa-map-marker-alt rechercher__icones--label"></i></label>
                     <input type="search" name="barre-de-recherche__champs" id="barre-de-recherche__champs" class="barre-de-recherche__champs--bordure-gris" placeholder="Tapez une ville" value="Marseille, France"/>
                     
                     <button class="barre-de-recherche__bouton--loupe"><i class="fas fa-search"></i></button>
@@ -59,10 +59,10 @@
                 <div class="filtres">
                     <p>Filtres</p>
                     <div class="filtres__boutons">
-                        <button class="boutons__items"><i class="fas fa-money-bill-wave rechercher__icones rechercher__icones--filtres"></i>Économique</button>
-                        <button class="boutons__items"><i class="fas fa-child rechercher__icones rechercher__icones--filtres"></i>Familial</button>
-                        <button class="boutons__items"><i class="fas fa-heart rechercher__icones rechercher__icones--filtres"></i>Romantique</button>
-                        <button class="boutons__items"><i class="fas fa-dog rechercher__icones rechercher__icones--filtres"></i>Animaux autorisés</button>
+                        <button class="boutons__items"><i class="fas fa-money-bill-wave rechercher__icones--filtres"></i>Économique</button>
+                        <button class="boutons__items"><i class="fas fa-child rechercher__icones--filtres"></i>Familial</button>
+                        <button class="boutons__items"><i class="fas fa-heart rechercher__icones--filtres"></i>Romantique</button>
+                        <button class="boutons__items"><i class="fas fa-dog rechercher__icones--filtres"></i>Animaux autorisés</button>
                     </div>
                 </div>
                 <aside class="info">
@@ -169,30 +169,43 @@
                                 <source media="(max-width:991px)" srcset="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
                                 <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo de l'hôtel Le soleil du matin" />
                             </picture>
-                            <h3>Hôtel Le soleil du matin</h3>
-                            <p>Nuit à partir de <strong>128€</strong></p>
-                            <p class="carte-populaire__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </p>
+                            <div class="carte-populaire__description">
+                                <div class="description__texte">
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de <strong>128€</strong></p>
+                                </div>
+                                <p class="description__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </p>
+                            </div>
                         </a>
                         <a href="#" class="conteneur__carte-populaire">
                             <picture class="carte-populaire__img">
                                 <source media="(max-width:991px)" srcset="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
                                 <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo des chambres d'hôtes Au coeur de l'eau" />
                             </picture>
-                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                            <p>Nuit à partir de <strong>71€</strong></p>
-                            <p class="carte-populaire__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                            </p>
+                            <div class="carte-populaire__description">
+                                <div class="description__texte">
+                                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                    <p>Nuit à partir de <strong>71€</strong></p>
+                                </div>
+                                <p class="description__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </p>
+                            </div>
                         </a>
                         <a href="#" class="conteneur__carte-populaire">
                             <picture class="carte-populaire__img">
                                 <source media="(max-width:991px)" srcset="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
                                 <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo de l'hôtel Tout Bleu et Blanc" />
                             </picture>
-                            <h3>Hôtel Tout bleu et Blanc</h3>
-                            <p>Nuit à partir de <strong>68€</strong></p>
-                            <p class="carte-populaire__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                            </p>
+                            <div class="carte-populaire__description">
+                                <div class="description__texte">
+                                    <h3>Hôtel Tout bleu et Blanc</h3>
+                                    <p>Nuit à partir de <strong>68€</strong></p>
+                                </div>
+                                <p class="description__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </p>
+                            </div>
+
                         </a>
                     </div>
                 </aside>

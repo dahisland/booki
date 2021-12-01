@@ -52,9 +52,6 @@ div.filtres {
     button.boutons__items {
         margin: 14px 20px 14px 0px;
     }
-        .rechercher__icones--filtres {
-            line-height:40px;
-        }
 
 /*-------------------- SECTION HEBERGEMENT - Tablettes */
 
@@ -66,7 +63,7 @@ article.hebergement-marseille {
 }
     a.conteneur__carte-hotel {
         width:48%;
-        height:147px;
+        height:140px;
     }
         picture.carte-hotel__img {
             height:55%;
@@ -74,6 +71,9 @@ article.hebergement-marseille {
         div.carte-hotel__tarif {
             padding:7px 0px 0px 0px;
         }
+            div.carte-hotel__tarif p {
+                padding-top:2px;
+            }
             p.tarif__icones {
                 font-size:12px;
             }
@@ -83,12 +83,12 @@ article.hebergement-marseille {
 aside.hebergement-populaire {
     width:38%;
 }
+    a.conteneur__carte-populaire {
+        height:120px;
+    }
     picture.carte-populaire__img {
         width:37%;
         margin-right:6px;
-    }
-    p.carte-populaire__icones {
-        left:40%;
     }
 
 /*--------------------- SECTION ACTIVITE - Tablettes */

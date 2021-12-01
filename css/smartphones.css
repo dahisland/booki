@@ -66,11 +66,6 @@ section.rechercher {
     padding:0 5%;
     margin-bottom:30px;
 }
-    .rechercher__icones {
-        width:50px;
-        height:50px;
-        vertical-align:middle;
-    }
 
 /* CHAMPS DE RECHERCHE - Smartphone */
 
@@ -78,17 +73,25 @@ form.barre-de-recherche {
     margin-top:30px;
     height:50px;
 }
+    .rechercher__icones--label {
+        width:51px;
+        height:51px;
+        line-height:51px;
+        vertical-align:middle;
+        text-align:center;
+    }
     input#barre-de-recherche__champs {
-        width:210px;
+        width:200px;
+        padding-right:25px;
     }
     button.barre-de-recherche__bouton {
         display:none;
     }
     button.barre-de-recherche__bouton--loupe {
         display:block;
-        width:50px;
-        height:50px;
-        margin-left:-5px;
+        width:51px;
+        height:51px;
+        margin-left:-20px;
     }
 
 /* BOUTONS DE FILTRES - Smartphones */
@@ -108,6 +111,9 @@ div.filtres {
     }
     .rechercher__icones--filtres {
         margin-top:-3px;
+        width:50px;
+        height:50px;
+        line-height:44px;
         border:3px solid #DEEBFF;
     }
     button.boutons__items:hover .rechercher__icones--filtres {
@@ -166,18 +172,12 @@ aside.hebergement-populaire {
         margin-bottom:12px;
         font-size:14px;
     }
-        a.conteneur__carte-populaire h3 {
-            margin-top:10px;
-            margin-bottom:3px;
-        }
         picture.carte-populaire__img {
             width:38%;
             margin-right:17px;
         }
-        p.carte-populaire__icones {
+        p.description__icones {
             font-size:11px;
-            left:43%;
-            bottom:10px;
         }
 
 /*--------------------- SECTION ACTIVITE - Smartphones */
