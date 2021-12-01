@@ -1,0 +1,119 @@
+/*--------------------------- REGLAGES DE MISE EN PAGE GENERALE - Smartphones */
+body {
+    font-size:14px;
+}
+h1, h2 {
+    font-size:17px;
+}
+h3 {
+    font-size:14px;
+}
+input, label, button {
+    font-size:14px;
+}
+
+/* NAV - Smartphones */
+
+picture.entete__image {
+    margin:0px;
+}
+a.li__liens {
+    border-top: 0px;
+    border-bottom:3px solid transparent;
+    padding-bottom:15px;
+}
+a.li__liens:focus, a.li__liens:hover {
+    color:#0065FC;
+    border-top:0px;
+    border-bottom:3px solid #0065FC;
+}
+
+/*-------------------------------------- CONTENU PRINCIPAL - Tablettes */
+main {
+    margin-top:20px;
+}
+
+/*----------------------- SECTION RECHERCHE - Tablettes */
+
+/* CHAMPS DE RECHERCHE - Tablettes */
+
+form.barre-de-recherche {
+    margin-bottom:20px;
+}
+    input#barre-de-recherche__champs {
+        width:200px;
+    }
+
+/* BOUTONS DE FILTRES - Tablettes */
+
+div.filtres {
+    flex-direction:column;
+}
+    button.boutons__items {
+        margin: 14px 20px 14px 0px;
+    }
+        .rechercher__icones--filtres {
+            line-height:40px;
+        }
+
+/*-------------------- SECTION HEBERGEMENT - Tablettes */
+
+/* HEBERGEMENTS A MARSEILLE - Tablettes */
+
+article.hebergement-marseille {
+    width:58%;
+    padding:3%;
+}
+    a.conteneur__carte-hotel {
+        width:48%;
+        height:147px;
+    }
+        picture.carte-hotel__img {
+            height:55%;
+        }
+        div.carte-hotel__tarif {
+            padding:7px 0px 0px 0px;
+        }
+            p.tarif__icones {
+                font-size:12px;
+            }
+
+/* LES PLUS POPULAIRES - Tablettes */
+
+aside.hebergement-populaire {
+    width:38%;
+}
+    picture.carte-populaire__img {
+        width:37%;
+        margin-right:6px;
+    }
+    p.carte-populaire__icones {
+        left:40%;
+    }
+
+/*--------------------- SECTION ACTIVITE - Tablettes */
+
+div.activite__galerie {
+    flex-wrap:wrap;
+}
+    div.galerie__conteneur {
+        width:48%;
+        margin-bottom:35px;
+    }
+
+/*----------------------------------------------- PIED DE PAGE - Tablettes */
+
+    div.pied-de-page {
+        width:100%;
+        padding:20px 3% 30px 3%;    
+        justify-content: center;
+    }
+        div.pied-de-page__conteneur {
+            width:33%;
+            text-align:center;
+        }
+        div.pied-de-page__conteneur:nth-child(2) {
+            width:34%;
+            border-right:4px solid #FFFFFF;
+            border-left:4px solid #FFFFFF;
+        }
