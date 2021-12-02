@@ -1,219 +1,256 @@
-/*--------------------------- REGLAGES DE MISE EN PAGE GENERALE - Smartphones */
-body {
-    font-size:16px;
-}
-h1, h2 {
-    font-size:22px;
-}
-h3 {
-    font-size:16px;
-}
-input, label, button {
-    font-size:18px;
-}
+@media screen and (max-width:767px) {
 
-/*--------------------------------- ENTETE - Smartphones */
+    /*--------------------------- REGLAGES DE MISE EN PAGE GENERALE - Smartphones */
 
-header.entete {
-    width:100%;
-    padding:0;
-    flex-direction:column;
-    align-items:center;
-}
+    body {
+        font-size:16px;
+    }
+    h1, h2 {
+        font-size:22px;
+    }
+    h3 {
+        font-size:18px;
+    }
+    input, label, button {
+        font-size:17px;
+    }
 
-/* LOGO - Smartphone */
+    /*--------------------------------- ENTETE - Smartphones */
 
-picture.entete__image {
-    margin:20px 0px 0px 38px;
-}
-
-/* NAV - Smartphones */
-
-nav {
-    width:100%;
-}
-    ul.menu {
+    header.entete {
         width:100%;
+        padding:0;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    /* LOGO - Smartphone */
+
+    picture.entete__image {
+        margin:20px 0px 0px 38px;
+    }
+
+    /* NAV - Smartphones */
+
+    nav {
+        width:100%;
+    }
+        ul.menu {
+            width:100%;
+            padding-bottom:0px;
+        }
+            li.menu__li {
+                width:50%;
+            }
+                a.li__liens {
+                    display:block;
+                    width:100%;
+                    border-top: 0px;
+                    border-bottom:4px solid #F2F2F2;
+                    padding-top:30px;
+                    padding-bottom:15px;
+                }
+                a.li__liens:focus, a.li__liens:hover {
+                    color:#0065FC;
+                    border-top:0px;
+                    border-bottom:4px solid #0065FC;
+                }
+
+    /*-------------------------------------- CONTENU PRINCIPAL - Smartphones */
+
+    main {
+        margin-top:30px;
+        padding:0;
+    }
+
+    /*----------------------- SECTION RECHERCHE - Smartphones */
+
+    section.rechercher {
+        padding:0 5%;
+        margin-bottom:30px;
+    }
+
+    /* CHAMPS DE RECHERCHE - Smartphone */
+
+    form.barre-de-recherche {
+        margin-top:30px;
+        min-height:50px;
+    }
+        form.barre-de-recherche label, form.barre-de-recherche input, form.barre-de-recherche button {
+            margin-bottom:5px;
+        }
+        .rechercher__icones--label {
+            width:45px;
+            height:45px;
+            line-height:45px;
+            vertical-align:middle;
+            text-align:center;
+        }
+        input#barre-de-recherche__champs {
+            height:47px;
+            padding-right:25px;
+            margin-right:-20px;
+        }
+        button.barre-de-recherche__bouton {
+            display:none;
+        }
+        button.barre-de-recherche__bouton--loupe {
+            display:block;
+            width:47px;
+            height:47px;
+        }
+
+    /* BOUTONS DE FILTRES - Smartphones */
+
+    div.filtres {
+        flex-direction: column;
+        margin:25px 0px 15px 0px;
+    }
+        div.filtres__boutons {
+            margin: 10px 0px 0px 5px;
+        }
+            button.boutons__items {
+                border:3px solid #DEEBFF;
+            height:50px;
+            margin: 0px 20px 14px 0px;
+            font-size: 16px;
+            position:relative;
+            padding-left:50px;
+            text-align:left;
+        }
+            .rechercher__icones--filtres {
+                width:50px;
+                height:50px;
+                line-height:44px;
+                border:3px solid #DEEBFF;
+                position:absolute;
+                top:-3px;
+                left:-5px;
+                text-align:center;
+            }
+            button.boutons__items:hover .rechercher__icones--filtres {
+                border:3px solid #0065FC;
+            }
+
+    /* INFO - Smartphone */
+
+    .rechercher__icones--info {
+        width:32px;
+    }
+
+    /*-------------------- SECTION HEBERGEMENT - Smartphones */
+
+    section.hebergement {
+        flex-direction:column-reverse;
+        padding-bottom:20px;
+    }
+        section.hebergement article, section.hebergement aside {    
+            width:100%;
+            border-radius:0px;
+            padding: 30px 5% 20px 5%;
+        }
+   
+    /* HEBERGEMENTS A MARSEILLE - Smartphones */
+
+    article.hebergement-marseille {
+        background-color:#FFFFFF;
+        border-radius:0px;
+    }
+        div.hebergement-marseille__conteneur {
+            flex-direction: column;
+            align-content: center;
+        }
+            a.conteneur__carte-hotel {
+                width:100%;
+            }
+                picture.carte-hotel__img {
+                    height:130px;
+                }
+                figcaption.carte-hotel__tarif {
+                    font-size:15px;
+                }
+                    figcaption.carte-hotel__tarif p {
+                        margin-top:4px;
+                        margin-bottom:4px;
+                    }
+                    p.tarif__icones {
+                        font-size:13px;
+                    }
+
+    /* LES PLUS POPULAIRES - Smartphones */
+
+    aside.hebergement-populaire {
+        border-radius:0px;
+    }
+        a.conteneur__carte-populaire {
+            margin-bottom:12px;
+            font-size:14px;
+            height:160px;
+        }
+            picture.carte-populaire__img {
+                width:38%;
+                height:160px;
+                margin-right:17px;
+            }
+            figcaption.carte-populaire__description {
+                height:150px;
+            }
+                div.description__texte p {
+                    font-size:15px;
+                    padding-top:10px;
+                }
+                p.description__icones {
+                    font-size:13px;
+                }
+
+    /*--------------------- SECTION ACTIVITE - Smartphones */
+
+    section.activite {
+        margin: 20px 5% 0px 5%;
         padding-bottom:0px;
     }
-        li.menu__li {
-            width:50%;
+        div.activite__galerie {
+            flex-direction:column;
         }
-            a.li__liens {
-                display:block;
+            div.galerie__conteneur {
                 width:100%;
-                border-top: 0px;
-                border-bottom:4px solid #F2F2F2;
-                padding-top:30px;
-                padding-bottom:15px;
-            }
-            a.li__liens:focus, a.li__liens:hover {
-                color:#0065FC;
-                border-top:0px;
-                border-bottom:4px solid #0065FC;
-            }
-
-/*-------------------------------------- CONTENU PRINCIPAL - Smartphones */
-
-main {
-    margin-top:30px;
-    padding:0;
-}
-
-/*----------------------- SECTION RECHERCHE - Smartphones */
-
-section.rechercher {
-    padding:0 5%;
-    margin-bottom:30px;
-}
-
-/* CHAMPS DE RECHERCHE - Smartphone */
-
-form.barre-de-recherche {
-    margin-top:30px;
-    height:50px;
-}
-    .rechercher__icones--label {
-        width:51px;
-        height:51px;
-        line-height:51px;
-        vertical-align:middle;
-        text-align:center;
-    }
-    input#barre-de-recherche__champs {
-        width:200px;
-        padding-right:25px;
-    }
-    button.barre-de-recherche__bouton {
-        display:none;
-    }
-    button.barre-de-recherche__bouton--loupe {
-        display:block;
-        width:51px;
-        height:51px;
-        margin-left:-20px;
-    }
-
-/* BOUTONS DE FILTRES - Smartphones */
-
-div.filtres {
-    flex-direction: column;
-    margin:25px 0px 15px 0px;
-}
-    div.filtres__boutons {
-        margin: 10px 0px 0px 3px;
-    }
-    button.boutons__items {
-        border:3px solid #DEEBFF;
-        height:50px;
-        margin: 0px 20px 14px 0px;
-        font-size: 16px;
-    }
-    .rechercher__icones--filtres {
-        margin-top:-3px;
-        width:50px;
-        height:50px;
-        line-height:44px;
-        border:3px solid #DEEBFF;
-    }
-    button.boutons__items:hover .rechercher__icones--filtres {
-        border:3px solid #0065FC;
-    }
-
-/* INFO - Smartphone */
-
-.rechercher__icones--info {
-    width:32px;
-}
-
-/*-------------------- SECTION HEBERGEMENT - Smartphones */
-
-section.hebergement {
-    flex-direction:column-reverse;
-    padding-bottom:20px;
-}
-    section.hebergement article, section.hebergement aside {    
-        width:100%;
-        border-radius:0px;
-        padding: 30px 5% 20px 5%;
-    }
-   
-/* HEBERGEMENTS A MARSEILLE - Smartphones */
-
-article.hebergement-marseille {
-    background-color:#FFFFFF;
-    border-radius:0px;
-}
-    div.hebergement-marseille__conteneur {
-        flex-direction: column;
-        align-content: center;
-    }
-        a.conteneur__carte-hotel {
-            width:100%;
-            height:200px;
-        }
-            div.carte-hotel__tarif {
-                font-size:14px;
-            }
-                div.carte-hotel__tarif p {
-                    margin-top:4px;
-                    margin-bottom:4px;
-                }
-                p.tarif__icones {
-                    font-size:11px;
-                }
-
-/* LES PLUS POPULAIRES - Smartphones */
-
-aside.hebergement-populaire {
-    border-radius:0px;
-}
-    a.conteneur__carte-populaire {
-        margin-bottom:12px;
-        font-size:14px;
-    }
-        picture.carte-populaire__img {
-            width:38%;
-            margin-right:17px;
-        }
-        p.description__icones {
-            font-size:11px;
-        }
-
-/*--------------------- SECTION ACTIVITE - Smartphones */
-
-section.activite {
-    margin: 20px 5% 0px 5%;
-    padding-bottom:0px;
-}
-    div.activite__galerie {
-        flex-direction:column;
-    }
-        div.galerie__conteneur {
-            width:100%;
-            height:100%;
-        }
-            div.conteneur__carte-activite--hauteur100, div.conteneur__carte-activite--hauteur52, div.conteneur__carte-activite--hauteur41 {
-                height:200px;
+                height:220px;
                 margin-bottom:30px;
             }
+            div.galerie__conteneur--double-carte {
+                width:100%;
+                height:500px;
+                margin-bottom:0px;
+            }
+                figure.conteneur__carte-activite--hauteur100, figure.conteneur__carte-activite--hauteur52, figure.conteneur__carte-activite--hauteur41 {
+                    width:100%;
+                    height:220px;
+                    margin-bottom:30px;
+                }
 
-/*----------------------------------------------- PIED DE PAGE - Smartphones */
+    /*----------------------------------------------- PIED DE PAGE - Smartphones */
 
-footer {
-    margin:30px 0px 0px 0px;
-}
-    div.pied-de-page {
-        padding:40px 5% 50px 5%;;
-        flex-direction:column;
+    footer {
+        margin:30px 0px 0px 0px;
     }
-        div.pied-de-page__conteneur {
-            width:100%;
-            margin:0px 0px 30px 0px;
+        div.pied-de-page {
+            padding:40px 5% 50px 5%;;
+            flex-direction:column;
         }
-            span.conteneur__paragraphe--gras {
-                font-size:18px;
+            div.pied-de-page__conteneur {
+                width:100%;
+                margin:0px 0px 30px 0px;
+                text-align:left;
             }
-            footer ul {
-                padding-top:15px;
+            div.pied-de-page__conteneur:nth-child(2) {
+                width:100%;
+                border-left:0px;
+                border-right:0px;
             }
+                span.conteneur__paragraphe--gras {
+                    font-size:18px;
+                }
+                footer ul {
+                    padding-top:15px;
+                }
+}
