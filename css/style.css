@@ -129,7 +129,7 @@ form.barre-de-recherche {
     .rechercher__icones--label {
         width:44px;
         height:44px;
-        line-height:44px;
+        line-height:42px;
         text-align:center;
     }
     input#barre-de-recherche__champs {
