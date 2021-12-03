@@ -116,7 +116,7 @@ section.rechercher {
     padding-bottom:30px;
 }
 
-/* CHAMPS DE RECHERCHE */
+/* BARRE DE RECHERCHE */
 
 form.barre-de-recherche {
     display:flex;
@@ -126,12 +126,14 @@ form.barre-de-recherche {
     margin-bottom:30px;
     font-weight:700;
 }
+    /* ICONE du label du champs de recherche */
     .rechercher__icones--label {
         width:44px;
         height:44px;
         line-height:42px;
         text-align:center;
     }
+    /* Champs de recherche */
     input#barre-de-recherche__champs {
         max-width:200px;
         padding-left:10px;
@@ -153,41 +155,33 @@ form.barre-de-recherche {
         border-left-width:3px;
         border-right:0px;
     }
+    /* Mise en page commune aux boutons "Rechercher" et icone "loupe" */
     form.barre-de-recherche button {
         border:1px solid #0065fc;
         color:#FFFFFF;
         background-color:#0065fc;
-    }
-    button.barre-de-recherche__bouton {
-        width:120px;
-        border-radius:0px 13px 13px 0px;
-        font-weight:700;
-    }
-    button.barre-de-recherche__bouton--loupe {
-        display:none;
-        width:44px;
-        height:44px;
-        border-radius:13px 13px 13px 13px;
     }
     form.barre-de-recherche button:hover {
         color:#0065fc;
         background-color:#F2F2F2;
         cursor:pointer;
     }
+    /* Mise en page du bouton "Rechercher" */
+    button.barre-de-recherche__bouton {
+        width:120px;
+        border-radius:0px 13px 13px 0px;
+        font-weight:700;
+    }
+    /* Mise en page du bouton icone "loupe" */
+    button.barre-de-recherche__bouton--loupe {
+        display:none;
+        width:44px;
+        height:44px;
+        border-radius:13px 13px 13px 13px;
+    }
 
 /* BOUTONS DE FILTRES */
 
-.rechercher__icones--filtres {
-    width:48px;
-    height:48px;
-    line-height:44px;
-    color:#0065FC;
-    background-color:#DEEBFF;
-    border:2px solid transparent;
-    border-radius:25px;
-    margin-right:10px;
-    margin-left:-5px;
-}
 div.filtres {
     margin-bottom:30px;
     display:flex;
@@ -208,9 +202,22 @@ div.filtres__boutons {
         margin-left:25px;
         padding:0px 20px 0px 0px;
     }
+        /* ICONES des filtres */
+        .rechercher__icones--filtres {
+            width:48px;
+            height:48px;
+            line-height:44px;
+            color:#0065FC;
+            background-color:#DEEBFF;
+            border:2px solid transparent;
+            border-radius:25px;
+            margin-right:10px;
+            margin-left:-5px;
+        }
     button.boutons__items:hover {
         cursor:pointer;
     }
+    /* Comportement des icones de filtres au passage de la souris sur les boutons */
     button.boutons__items:hover .rechercher__icones--filtres {
         border:2px solid #0065FC;
     }
@@ -239,7 +246,6 @@ aside.info p {
     line-height:19px;
 }
 
-
 /*----------------------- SECTION HEBERGEMENT */
 
 section.hebergement {
@@ -247,10 +253,16 @@ section.hebergement {
     display:flex;
     justify-content: space-between;
 }
+    /* IMAGES contenues dans les cartes de l'article et du aside */
     section.hebergement img {
         object-fit: cover;
         width:100%;
         height:100%;
+    }
+    /* ICONES ETOILES contenues dans les cartes de l'article et du aside */
+    p.legende__icones {
+        color:#0065FC;
+        font-size:12px;
     }
 
 /* HEBERGEMENTS A MARSEILLE */
@@ -261,12 +273,14 @@ article.hebergement-marseille {
     background-color:#F2F2F2;
     border-radius:13px;
 }
+    /* CONTENEUR DES CARTES-HOTEL */
     div.hebergement-marseille__conteneur {
         display:flex;
         flex-wrap:wrap;
         justify-content:space-between;
         align-items: flex-start;
     }
+        /* CARTE-HOTEL */
         a.conteneur__carte-hotel {
             display:block;
             width:31%;
@@ -279,20 +293,19 @@ article.hebergement-marseille {
         a.conteneur__carte-hotel:hover {
             outline:2px dotted #0065fc;
     }
+            /* IMAGE CARTE-HOTEL */
             picture.carte-hotel__img {
                 display:block;
                 height:100px;
                 border-radius:11px 11px 0px 0px;
                 overflow:hidden;
             }
-            figcaption.carte-hotel__tarif {
+            /* LEGENDE CARTE-HOTEL */
+            figcaption.carte-hotel__legende {
                 font-size:13px;
                 padding:3px 0px 0px 7px;
             }
-                p.tarif__icones {
-                    color:#0065FC;
-                    font-size:12px;
-                }
+    /* CONTENEUR DU LIEN "Afficher plus" */
     a.hebergement-marseille__conteneur--gras {
         font-weight:700;
     }
@@ -305,13 +318,16 @@ aside.hebergement-populaire {
     background-color:#F2F2F2;
     border-radius:13px;
 }
+    /* TITRE H2 "Les plus populaires" */
     aside.hebergement-populaire h2 {
         position:relative;
     }
+        /* ICONE DU TITRE H2 "Les plus populaires" */
         i.hebergement-populaire-h2__icone--absolue {
             position:absolute;
             right:0;
         }
+    /* CONTENEUR DES CARTES-POPULAIRES */
     div.hebergement-populaire__conteneur {
         display:flex;
         flex-direction:column;
@@ -319,6 +335,7 @@ aside.hebergement-populaire {
         justify-content:space-between;
         align-content:center;
     }
+        /* CARTE-POPULAIRE */
         a.conteneur__carte-populaire {
             display:block;
             width:100%;
@@ -333,6 +350,7 @@ aside.hebergement-populaire {
         a.conteneur__carte-populaire:hover {
             outline:2px dotted #0065fc;
         }
+            /* IMAGE CARTE-POPULAIRE */
             picture.carte-populaire__img {
                 width:35%;
                 height:130px;
@@ -340,19 +358,16 @@ aside.hebergement-populaire {
                 float:left;
                 overflow:hidden;
             }
-            figcaption.carte-populaire__description {
+            /* LEGENDE CARTE-POPULAIRE */
+            figcaption.carte-populaire__legende {
                 display:flex;
                 flex-direction:column;
                 justify-content:space-between;
                 height:120px;
                 padding:5px 0px;
             }
-                div.description__texte p {
+                div.legende__texte p {
                     font-size:13px;
-                }
-                p.description__icones {
-                    color:#0065FC;
-                    font-size:12px;
                 }
 
 /*----------------------- SECTION ACTIVITE */
@@ -360,49 +375,57 @@ aside.hebergement-populaire {
 section.activite {
     padding-bottom:50px;
 }
-section.activite img {
-    object-fit: cover;
-    width:100%;
-    height:100%;
-}
-div.activite__galerie {
-    display:flex;
-    justify-content:space-between;
-}
-    div.galerie__conteneur {
-        width:23%;
-        height:500px;
+    section.activite img {
+        object-fit: cover;
+        width:100%;
+        height:100%;
     }
-    div.galerie__conteneur--double-carte {
+    /* GALERIE D'IMAGES ACTIVITES */
+    div.activite__galerie {
         display:flex;
-        flex-direction:column;
-        justify-content: space-between;
+        justify-content:space-between;
     }
-        figure.conteneur__carte-activite {
-            display:block;
-            border-radius:13px;
-            box-shadow:1px 1px 8px #D9D9D9;
-            overflow:hidden;
-            position:relative;
-        }
-        figure.conteneur__carte-activite--hauteur100 {
+        /* CONTENEUR DE CARTES-ACTIVITE */
+        div.galerie__conteneur {
+            width:23%;
             height:500px;
         }
-        figure.conteneur__carte-activite--hauteur52 {
-            height:260px;
+        /* CONTENEUR DE CARTES-ACTIVITE AVEC 2 IMAGES */
+        div.galerie__conteneur--double-carte {
+            display:flex;
+            flex-direction:column;
+            justify-content: space-between;
         }
-        figure.conteneur__carte-activite--hauteur41 {
-            height:205px;
-        }
-        section.activite figcaption {
-            position:absolute;
-            width:100%;
-            padding:17px;
-            font-weight:700;
-            bottom:0;
-            background-color:#FFFFFF;
-            border-radius:0px 0px 11px 11px;
-        }
+            /* CARTE-ACTIVITE */
+            figure.conteneur__carte-activite {
+                display:block;
+                border-radius:13px;
+                box-shadow:1px 1px 8px #D9D9D9;
+                overflow:hidden;
+                position:relative;
+            }
+            /* CARTE-ACTIVITE Grande hauteur */
+            figure.conteneur__carte-activite--hauteur-grande {
+                height:500px;
+            }
+            /* CARTE-ACTIVITE Moyenne hauteur */
+            figure.conteneur__carte-activite--hauteur-moyenne {
+                height:260px;
+            }
+            /* CARTE-ACTIVITE Petite hauteur */
+            figure.conteneur__carte-activite--hauteur-petite {
+                height:205px;
+            }
+                /* LEGENDE DES CARTES-ACTIVITE */
+                section.activite figcaption {
+                    position:absolute;
+                    width:100%;
+                    padding:17px;
+                    font-weight:700;
+                    bottom:0;
+                    background-color:#FFFFFF;
+                    border-radius:0px 0px 11px 11px;
+                }
         
 
 /*--------------------------------- PIED DE PAGE */
@@ -416,6 +439,7 @@ footer {
         display:flex;
         justify-content: space-between;
     }
+        /* PIED DE PAGE CONTENEUR */
         div.pied-de-page__conteneur {
         text-align:left;
         width:33%;

@@ -17,9 +17,12 @@
 
     /* NAV - Smartphones */
 
+    /* LOGO */
     picture.entete__image {
         margin:0px;
     }
+
+    /* NAV */
     a.li__liens {
         border-top: 0px;
         border-bottom:3px solid transparent;
@@ -39,7 +42,7 @@
 
     /*----------------------- SECTION RECHERCHE - Tablettes */
 
-    /* CHAMPS DE RECHERCHE - Tablettes */
+    /* BARRE DE RECHERCHE - Tablettes */
 
     form.barre-de-recherche {
         margin-bottom:20px;
@@ -56,26 +59,31 @@
 
     /*-------------------- SECTION HEBERGEMENT - Tablettes */
 
+    /* ICONES ETOILES contenues dans les cartes de l'article et du aside */
+    p.legende__icones {
+        font-size:12px;
+    }
+
     /* HEBERGEMENTS A MARSEILLE - Tablettes */
 
     article.hebergement-marseille {
         width:58%;
         padding:3%;
     }
+         /* CARTE-HOTEL */
         a.conteneur__carte-hotel {
             width:48%;
         }
+            /* IMAGE CARTE-HOTEL */
             picture.carte-hotel__img {
                 height:90px;
             }
-            figcaption.carte-hotel__tarif {
+            /* LEGENDE CARTE-HOTEL */
+            figcaption.carte-hotel__legende {
                 padding: 5px 0px 0px 5px
             }
-                figcaption.carte-hotel__tarif p {
+                figcaption.carte-hotel__legende p {
                     padding-top:2px;
-                }
-                p.tarif__icones {
-                    font-size:12px;
                 }
 
     /* LES PLUS POPULAIRES - Tablettes */
@@ -83,14 +91,17 @@
     aside.hebergement-populaire {
         width:38%;
     }
+        /* CARTE-POPULAIRE */
         a.conteneur__carte-populaire {
             height:140px;
         }
+            /* IMAGE CARTE-POPULAIRE */
             picture.carte-populaire__img {
                 width:40%;
                 margin-right:9px;
             }
-            figcaption.carte-populaire__description {
+            /* LEGENDE CARTE-POPULAIRE */
+            figcaption.carte-populaire__legende {
                 height:130px;
             }
 
@@ -99,6 +110,7 @@
     div.activite__galerie {
         flex-wrap:wrap;
     }
+        /* CONTENEUR DE CARTES-ACTIVITE */
         div.galerie__conteneur {
             width:48%;
             margin-bottom:35px;
@@ -111,10 +123,12 @@
         padding:20px 3% 30px 3%;    
         justify-content: center;
     }
+        /* PIED DE PAGE CONTENEUR */
         div.pied-de-page__conteneur {
             width:33%;
             text-align:center;
         }
+        /* Mise en page spécifique pour le 2ème conteneur enfant du parent pied-de-page */
         div.pied-de-page__conteneur:nth-child(2) {
             width:34%;
             border-right:4px solid #FFFFFF;

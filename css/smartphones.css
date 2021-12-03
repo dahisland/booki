@@ -70,7 +70,7 @@
         margin-bottom:30px;
     }
 
-    /* CHAMPS DE RECHERCHE - Smartphone */
+    /* BARRE DE RECHERCHE - Smartphone */
 
     form.barre-de-recherche {
         margin-top:30px;
@@ -79,10 +79,12 @@
         form.barre-de-recherche label, form.barre-de-recherche input, form.barre-de-recherche button {
             margin-bottom:5px;
         }
+        /* ICONE du label du champs de recherche */
         .rechercher__icones--label {
             vertical-align:middle;
             text-align:center;
         }
+        /* Champs de recherche */
         input#barre-de-recherche__champs {
             height:46px;
             padding-right:23px;
@@ -94,9 +96,11 @@
         input#barre-de-recherche__champs:focus {
             border-left-width:1px;
         }
+        /* Mise en page du bouton "Rechercher" */
         button.barre-de-recherche__bouton {
             display:none;
         }
+        /* Mise en page du bouton icone "loupe" */
         button.barre-de-recherche__bouton--loupe {
             display:block;
             width:46px;
@@ -121,6 +125,7 @@
             padding-left:50px;
             text-align:left;
         }
+            /* ICONES des filtres */
             .rechercher__icones--filtres {
                 width:50px;
                 height:50px;
@@ -158,6 +163,10 @@
             border-radius:0px;
             padding: 30px 5% 20px 5%;
         }
+        /* ICONES ETOILES contenues dans les cartes de l'article et du aside */
+        p.legende__icones {
+            font-size:13px;
+        }
    
     /* HEBERGEMENTS A MARSEILLE - Smartphones */
 
@@ -165,25 +174,26 @@
         background-color:#FFFFFF;
         border-radius:0px;
     }
+        /* CONTENEUR DES CARTES-HOTEL - Smartphones */
         div.hebergement-marseille__conteneur {
             flex-direction: column;
             align-content: center;
         }
+            /* CARTE-HOTEL - Smartphones */
             a.conteneur__carte-hotel {
                 width:100%;
             }
+                /* IMAGE CARTE-HOTEL - Smartphones */
                 picture.carte-hotel__img {
                     height:130px;
                 }
-                figcaption.carte-hotel__tarif {
+                /* LEGENDE CARTE-HOTEL - Smartphones */
+                figcaption.carte-hotel__legende {
                     font-size:15px;
                 }
-                    figcaption.carte-hotel__tarif p {
+                    figcaption.carte-hotel__legende p {
                         margin-top:4px;
                         margin-bottom:4px;
-                    }
-                    p.tarif__icones {
-                        font-size:13px;
                     }
 
     /* LES PLUS POPULAIRES - Smartphones */
@@ -191,25 +201,25 @@
     aside.hebergement-populaire {
         border-radius:0px;
     }
+        /* CARTE-POPULAIRE - Smartphones */
         a.conteneur__carte-populaire {
             margin-bottom:12px;
             font-size:14px;
             height:160px;
         }
+            /* IMAGE CARTE-POPULAIRE - Smartphones */
             picture.carte-populaire__img {
                 width:38%;
                 height:160px;
                 margin-right:17px;
             }
-            figcaption.carte-populaire__description {
+            /* LEGENDE CARTE-POPULAIRE - Smartphones */
+            figcaption.carte-populaire__legende {
                 height:150px;
             }
-                div.description__texte p {
+                div.legende__texte p {
                     font-size:15px;
                     padding-top:10px;
-                }
-                p.description__icones {
-                    font-size:13px;
                 }
 
     /*--------------------- SECTION ACTIVITE - Smartphones */
@@ -218,20 +228,24 @@
         margin: 20px 5% 0px 5%;
         padding-bottom:0px;
     }
+        /* GALERIE D'IMAGES ACTIVITES - Smartphones */
         div.activite__galerie {
             flex-direction:column;
         }
+            /* CONTENEUR DE CARTES-ACTIVITE - Smartphones */
             div.galerie__conteneur {
                 width:100%;
                 height:220px;
                 margin-bottom:30px;
             }
+            /* CONTENEUR DE CARTES-ACTIVITE AVEC 2 IMAGES - Smartphones */
             div.galerie__conteneur--double-carte {
                 width:100%;
                 height:500px;
                 margin-bottom:0px;
             }
-                figure.conteneur__carte-activite--hauteur100, figure.conteneur__carte-activite--hauteur52, figure.conteneur__carte-activite--hauteur41 {
+                /* CARTE-ACTIVITE avec les différentes hauteurs - Smartphones */
+                figure.conteneur__carte-activite--hauteur-grande, figure.conteneur__carte-activite--hauteur-moyenne, figure.conteneur__carte-activite--hauteur-petite {
                     width:100%;
                     height:220px;
                     margin-bottom:30px;
@@ -246,11 +260,13 @@
             padding:40px 5% 50px 5%;;
             flex-direction:column;
         }
+            /* PIED DE PAGE CONTENEUR */
             div.pied-de-page__conteneur {
                 width:100%;
                 margin:0px 0px 30px 0px;
                 text-align:left;
             }
+            /* Mise en page spécifique pour le 2ème conteneur enfant du parent pied-de-page */
             div.pied-de-page__conteneur:nth-child(2) {
                 width:100%;
                 border-left:0px;
