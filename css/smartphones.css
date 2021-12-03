@@ -80,19 +80,16 @@
             margin-bottom:5px;
         }
         .rechercher__icones--label {
-            width:45px;
-            height:45px;
-            line-height:45px;
             vertical-align:middle;
             text-align:center;
         }
         input#barre-de-recherche__champs {
-            height:47px;
-            padding-right:20px;
+            height:46px;
+            padding-right:23px;
             padding-left:9px;
             margin-right:-20px;
-            min-width:176px;
-            width:70%;
+            min-width:180px;
+            width:71%;
         }
         input#barre-de-recherche__champs:focus {
             border-left-width:1px;
@@ -102,8 +99,8 @@
         }
         button.barre-de-recherche__bouton--loupe {
             display:block;
-            width:47px;
-            height:47px;
+            width:46px;
+            height:46px;
         }
 
     /* BOUTONS DE FILTRES - Smartphones */
