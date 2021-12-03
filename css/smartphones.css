@@ -12,7 +12,7 @@
         font-size:18px;
     }
     input, label, button {
-        font-size:17px;
+        font-size:16px;
     }
 
     /*--------------------------------- ENTETE - Smartphones */
@@ -88,8 +88,14 @@
         }
         input#barre-de-recherche__champs {
             height:47px;
-            padding-right:25px;
+            padding-right:20px;
+            padding-left:9px;
             margin-right:-20px;
+            min-width:176px;
+            width:70%;
+        }
+        input#barre-de-recherche__champs:focus {
+            border-left-width:1px;
         }
         button.barre-de-recherche__bouton {
             display:none;

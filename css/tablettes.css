@@ -44,10 +44,7 @@
     form.barre-de-recherche {
         margin-bottom:20px;
     }
-        input#barre-de-recherche__champs {
-            width:200px;
-        }
-
+    
     /* BOUTONS DE FILTRES - Tablettes */
 
     div.filtres {

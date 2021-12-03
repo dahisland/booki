@@ -133,7 +133,7 @@ form.barre-de-recherche {
         text-align:center;
     }
     input#barre-de-recherche__champs {
-        width:190px;
+        max-width:200px;
         padding-left:10px;
         padding-right:10px;
         outline:none;
