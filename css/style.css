@@ -222,22 +222,23 @@ div.filtres__boutons {
 
 /* INFO */
 
-aside.info {
-    display:flex;
-    align-items:baseline;
+.rechercher__icones--info {
+    display:block;
+    float:left;
+    color:#0065FC;
+    width:25px;
+    height:25px;
+    text-align:center;
+    line-height:19px;
+    font-size:12px;
+    border-radius:15px;
+    border:3px solid #F2F2F2;
+    margin-right:10px;
 }
-    .rechercher__icones--info {
-        display:block;
-        color:#0065FC;
-        width:25px;
-        height:25px;
-        text-align:center;
-        line-height:20px;
-        font-size:12px;
-        border-radius:15px;
-        border:3px solid #F2F2F2;
-        margin-right:10px;
-    }
+aside.info p {
+    line-height:19px;
+}
+
 
 /*----------------------- SECTION HEBERGEMENT */
 
