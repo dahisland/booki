@@ -58,17 +58,14 @@ input, label, button {
     margin:0
 }
 header, main, div.pied-de-page {
-    width:100%;
+    width:94%;
+    margin:0 auto;
     max-width:2000px;
-    padding:0 3%;
-    margin:0;
 }
 
 /*--------------------------------- ENTETE */
 
 header.entete {
-    width:100%;
-    padding:0 3%;
     display:flex;
     justify-content:space-between;
     align-items:flex-end;
@@ -431,6 +428,7 @@ section.activite {
 /*--------------------------------- PIED DE PAGE */
 
 footer {
+    width:100%;
     background-color:#F2F2F2;
 }
     div.pied-de-page {
