@@ -192,6 +192,7 @@ div.filtres__boutons {
     align-items:center;
 }
     button.boutons__items {
+        height:50px;
         border: 2px solid #DEEBFF;
         background-color:#FFFFFF;
         font-size:14px;
@@ -201,15 +202,15 @@ div.filtres__boutons {
     }
         /* ICONES des filtres */
         .rechercher__icones--filtres {
-            width:48px;
-            height:48px;
-            line-height:44px;
+            width:46px;
+            height:46px;
+            line-height:42px;
             color:#0065FC;
             background-color:#DEEBFF;
             border:2px solid transparent;
             border-radius:25px;
             margin-right:10px;
-            margin-left:-5px;
+            margin-left:-4px;
         }
     button.boutons__items:hover {
         cursor:pointer;
@@ -226,22 +227,26 @@ div.filtres__boutons {
 
 /* INFO */
 
-.rechercher__icones--info {
-    display:block;
-    float:left;
-    color:#0065FC;
-    width:25px;
-    height:25px;
-    text-align:center;
-    line-height:19px;
-    font-size:12px;
-    border-radius:15px;
-    border:3px solid #F2F2F2;
-    margin-right:10px;
+aside.info {
+    display:flex;
+    align-items:center;
 }
-aside.info p {
-    line-height:19px;
-}
+    .rechercher__icones--info {
+        display:block;
+        color:#0065FC;
+        width:25px;
+        height:25px;
+        text-align:center;
+        line-height:19px;
+        font-size:11px;
+        border-radius:15px;
+        border:3px solid #F2F2F2;
+        margin-right:10px;
+    }
+    aside.info p {
+        width:88%;
+        line-height:19px;
+    }
 
 /*----------------------- SECTION HEBERGEMENT */
 
@@ -264,7 +269,7 @@ section.hebergement {
 
 /* HEBERGEMENTS A MARSEILLE */
 
-article.hebergement-marseille {
+div.hebergement-marseille {
     width:64%;
     padding:3% 3% 2% 3%;
     background-color:#F2F2F2;
@@ -400,6 +405,9 @@ section.activite {
                 box-shadow:1px 1px 8px #D9D9D9;
                 overflow:hidden;
                 position:relative;
+            }
+            a.conteneur__carte-activite--liens:hover figure.conteneur__carte-activite {
+                outline:2px dotted #0065fc;
             }
             /* CARTE-ACTIVITE Grande hauteur */
             figure.conteneur__carte-activite--hauteur-grande {

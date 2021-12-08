@@ -6,10 +6,13 @@
         font-size:16px;
     }
     h1, h2 {
-        font-size:22px;
+        font-size:21px;
+    }
+    h2 {
+        padding-bottom:20px;
     }
     h3 {
-        font-size:18px;
+        font-size:16px;
     }
     input, label, button {
         font-size:16px;
@@ -116,22 +119,22 @@
         margin:25px 0px 15px 0px;
     }
         div.filtres__boutons {
-            margin: 10px 0px 0px 5px;
+            margin: 20px 0px 0px 5px;
         }
             button.boutons__items {
-                border:3px solid #DEEBFF;
-            height:50px;
-            margin: 0px 20px 14px 0px;
+            border:3px solid #DEEBFF;
+            height:47px;
+            margin: 0px 17px 14px 0px;
             font-size: 16px;
             position:relative;
-            padding-left:50px;
+            padding-left:45px;
             text-align:left;
         }
             /* ICONES des filtres */
             .rechercher__icones--filtres {
-                width:50px;
-                height:50px;
-                line-height:44px;
+                width:47px;
+                height:47px;
+                line-height:41px;
                 border:3px solid #DEEBFF;
                 position:absolute;
                 top:-3px;
@@ -143,14 +146,18 @@
             }
 
     /* INFO - Smartphone */
-
-    .rechercher__icones--info {
-        width:30px;
-        height:30px;
-        line-height:24px;
+    
+    aside.info {
+        align-items:flex-start;
     }
+        .rechercher__icones--info {
+            width:24px;
+            height:24px;
+            font-size:12px;
+            line-height:16px;
+        }
         aside.info p {
-            line-height:28px;
+            line-height:16px;
         }
 
 
@@ -160,19 +167,16 @@
         flex-direction:column-reverse;
         padding-bottom:20px;
     }
-        section.hebergement article, section.hebergement aside {    
+        div.hebergement-marseille, aside.hebergement-populaire {    
             width:100%;
             border-radius:0px;
-            padding: 30px 5% 20px 5%;
-        }
-        /* ICONES ETOILES contenues dans les cartes de l'article et du aside */
-        p.legende__icones {
-            font-size:13px;
+            padding: 35px 5% 20px 5%;
         }
    
     /* HEBERGEMENTS A MARSEILLE - Smartphones */
 
-    article.hebergement-marseille {
+    div.hebergement-marseille {
+        width:100%;
         background-color:#FFFFFF;
         border-radius:0px;
     }
@@ -194,33 +198,39 @@
                     font-size:15px;
                 }
                     figcaption.carte-hotel__legende p {
+                        font-size:14px;
                         margin-top:4px;
                         margin-bottom:4px;
                     }
+                    figcaption.carte-hotel__legende p.legende__icones {
+                        font-size:12px;
+                    }            
 
     /* LES PLUS POPULAIRES - Smartphones */
 
     aside.hebergement-populaire {
+        width:100%;
         border-radius:0px;
     }
         /* CARTE-POPULAIRE - Smartphones */
         a.conteneur__carte-populaire {
             margin-bottom:12px;
             font-size:14px;
-            height:160px;
+            height:140px;
         }
             /* IMAGE CARTE-POPULAIRE - Smartphones */
             picture.carte-populaire__img {
-                width:38%;
-                height:160px;
+                width:36%;
+                height:140px;
                 margin-right:17px;
             }
             /* LEGENDE CARTE-POPULAIRE - Smartphones */
             figcaption.carte-populaire__legende {
-                height:150px;
+                height:130px;
+                padding-right:15px;
             }
                 div.legende__texte p {
-                    font-size:15px;
+                    font-size:14px;
                     padding-top:10px;
                 }
 
