@@ -50,7 +50,7 @@ L'objectif de ce projet consiste à réaliser le prototype en HTML/CSS de la pag
 # Bilan du projet
 
 Un prototype HTML/CSS a été réalisé conformément aux consignes énoncées précédemment.
-Les fichiers rendus se composent d'un index.html accompagné de ses fichiers CSS de mis een forme.
+Les fichiers rendus se composent d'un index.html accompagné de ses fichiers CSS de mise en forme.
 Le projet répond aux attentes du client sur les point suivants :
 
 - HTML et CSS conformes aux normes W3C
