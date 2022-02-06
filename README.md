@@ -59,5 +59,6 @@ Le projet répond aux attentes du client sur les point suivants :
 - Compatibilité du prototype avec les dernières versions de Chrome et de Firefox
 - Optimisation du temps de chargement avec intégration judicieuse de résolutions d'images adaptées aux différents supports
 - Utilisation majoritaire de flexbox pour optimiser le responsive design
+- Usage de balises sémantiques appropriées pour faciliter l'accessibilité et le référencement du site
 
 Temps de réalisation du projet : environ 3 semaines
