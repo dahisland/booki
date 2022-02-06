@@ -1,430 +1,571 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-
-    <head>
-        <meta charset="utf-8" />
-        <title>Booki - Trouvez votre hébergement pour des vacances de rêve</title>
-        <meta name="description" content="Booki vous aide dans votre recherche d'hébergement pour des vacances adaptées
+  <head>
+    <meta charset="utf-8" />
+    <title>Booki - Trouvez votre hébergement pour des vacances de rêve</title>
+    <meta
+      name="description"
+      content="Booki vous aide dans votre recherche d'hébergement pour des vacances adaptées
         à vos critères et envies. Voyagez en famille ou en amoureux, tout en adaptant votre séjour à votre budget et vos attentes, sans oublier
-        vos animaux de compagnies" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        vos animaux de compagnies"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- GOOGLE FONT RALEWAY -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        
-        <!-- SCRIPTE FONT AWESOME -->
-        <script src="https://kit.fontawesome.com/e2e7cc2238.js" crossorigin="anonymous"></script>
-        
-        <!-- LIENS VERS CSS ET CSS MEDIAQUERIES -->
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/tablettes.css" />
-        <link rel="stylesheet" href="css/smartphones.css" />  
-    </head>
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./images/logo/favicon.png"
+    />
 
-    <body>
+    <!-- GOOGLE FONT RALEWAY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- ENTETE -->
+    <!-- SCRIPTE FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/e2e7cc2238.js"
+      crossorigin="anonymous"
+    ></script>
 
-        <header class="entete">
-            <picture class="entete__image">
-                <img src="images/logo/Booki.png" alt="Logo Booki" />
-            </picture>
-            <nav>
-                <ul class="menu">
-                    <li class="menu__li"><a href="#article-marseille" class="li__liens">Hébergements</a></li>
-                    <li class="menu__li"><a href="#section-activite" class="li__liens">Activités</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- LIENS VERS CSS ET CSS MEDIAQUERIES -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tablettes.css" />
+    <link rel="stylesheet" href="css/smartphones.css" />
+  </head>
 
-        <!-- CONTENU PRINCIPAL -->
+  <body>
+    <!-- ENTETE -->
 
-        <main>
+    <header class="entete">
+      <picture class="entete__image">
+        <img src="images/logo/Booki.png" alt="Logo Booki" />
+      </picture>
+      <nav>
+        <ul class="menu">
+          <li class="menu__li">
+            <a href="#article-marseille" class="li__liens">Hébergements</a>
+          </li>
+          <li class="menu__li">
+            <a href="#section-activite" class="li__liens">Activités</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-            <!-- SECTION RECHERCHE -->
+    <!-- CONTENU PRINCIPAL -->
 
-            <section class="rechercher">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
+    <main>
+      <!-- SECTION RECHERCHE -->
 
-                <!-- BARRE DE RECHERCHE -->
-                <form class="barre-de-recherche">
-                    <label for="barre-de-recherche__champs" class="barre-de-recherche__champs--arrondi barre-de-recherche__champs--bordure-gris barre-de-recherche__champs--fond-gris"><i class="fas fa-map-marker-alt rechercher__icones--label"></i></label>
-                    <input type="search" name="barre-de-recherche__champs" id="barre-de-recherche__champs" class="barre-de-recherche__champs--bordure-gris" placeholder="Tapez une ville" value="Marseille, France"/>
-                    
-                    <button class="barre-de-recherche__bouton--loupe"><i class="fas fa-search"></i></button>
-                    <button class="barre-de-recherche__bouton">Rechercher</button>
-                </form>
+      <section class="rechercher">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
 
-                <!-- BOUTONS DE FILTRES -->
-                <div class="filtres">
-                    <p>Filtres</p>
-                    <div class="filtres__boutons">
-                        <button class="boutons__items"><i class="fas fa-money-bill-wave rechercher__icones--filtres"></i>Économique</button>
-                        <button class="boutons__items"><i class="fas fa-child rechercher__icones--filtres"></i>Familial</button>
-                        <button class="boutons__items"><i class="fas fa-heart rechercher__icones--filtres"></i>Romantique</button>
-                        <button class="boutons__items"><i class="fas fa-dog rechercher__icones--filtres"></i>Animaux autorisés</button>
-                    </div>
-                </div>
+        <!-- BARRE DE RECHERCHE -->
+        <form class="barre-de-recherche">
+          <label
+            for="barre-de-recherche__champs"
+            class="barre-de-recherche__champs--arrondi barre-de-recherche__champs--bordure-gris barre-de-recherche__champs--fond-gris"
+            ><i class="fas fa-map-marker-alt rechercher__icones--label"></i
+          ></label>
+          <input
+            type="search"
+            name="barre-de-recherche__champs"
+            id="barre-de-recherche__champs"
+            class="barre-de-recherche__champs--bordure-gris"
+            placeholder="Tapez une ville"
+            value="Marseille, France"
+          />
 
-                <!-- INFO -->
-                <aside class="info">
-                    <i class="fas fa-info rechercher__icones--info"></i>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </aside>
-            </section>
+          <button class="barre-de-recherche__bouton--loupe">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="barre-de-recherche__bouton">Rechercher</button>
+        </form>
 
-            <!-- SECTION HEBERGEMENT -->
+        <!-- BOUTONS DE FILTRES -->
+        <div class="filtres">
+          <p>Filtres</p>
+          <div class="filtres__boutons">
+            <button class="boutons__items">
+              <i class="fas fa-money-bill-wave rechercher__icones--filtres"></i
+              >Économique
+            </button>
+            <button class="boutons__items">
+              <i class="fas fa-child rechercher__icones--filtres"></i>Familial
+            </button>
+            <button class="boutons__items">
+              <i class="fas fa-heart rechercher__icones--filtres"></i>Romantique
+            </button>
+            <button class="boutons__items">
+              <i class="fas fa-dog rechercher__icones--filtres"></i>Animaux
+              autorisés
+            </button>
+          </div>
+        </div>
 
-            <section class="hebergement">
-                
-                <!-- HEBERGEMENTS A MARSEILLE -->
-                <div id="article-marseille" class="hebergement-marseille">
-                    <h2>Hébergements à Marseille</h2>
+        <!-- INFO -->
+        <aside class="info">
+          <i class="fas fa-info rechercher__icones--info"></i>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </aside>
+      </section>
 
-                    <!-- CONTENEUR DES CARTES-HOTEL -->
-                    <div class="hebergement-marseille__conteneur">
+      <!-- SECTION HEBERGEMENT -->
 
-                        <!-- CARTE-HOTEL La Cannebiere -->
-                        <a href="#" class="conteneur__carte-hotel">
-                            <figure>
-                                <!-- IMAGE La Cannebiere -->
-                                <picture class="carte-hotel__img">
-                                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo de l'Auberge de la Cannebière" />
-                                </picture>
-                                <!-- LEGENDE La Cannebiere -->
-                                <figcaption class="carte-hotel__legende">
-                                    <h3>Auberge la Cannebière</h3>
-                                    <p>Nuit à partir de <strong>25€</strong></p>
-                                    <p class="legende__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </a>
+      <section class="hebergement">
+        <!-- HEBERGEMENTS A MARSEILLE -->
+        <div id="article-marseille" class="hebergement-marseille">
+          <h2>Hébergements à Marseille</h2>
 
-                        <!-- CARTE-HOTEL Hotel du port -->
-                        <a href="#" class="conteneur__carte-hotel">
-                            <figure>
-                                <!-- IMAGE Hotel du port -->
-                                <picture class="carte-hotel__img">
-                                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo de l'Hôtel du port" />
-                                </picture>
-                                <!-- LEGENDE Hotel du port -->
-                                <figcaption class="carte-hotel__legende">
-                                    <h3>Hôtel du port</h3>
-                                    <p>Nuit à partir de <strong>52€</strong></p>
-                                    <p class="legende__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </a>
+          <!-- CONTENEUR DES CARTES-HOTEL -->
+          <div class="hebergement-marseille__conteneur">
+            <!-- CARTE-HOTEL La Cannebiere -->
+            <a href="#" class="conteneur__carte-hotel">
+              <figure>
+                <!-- IMAGE La Cannebiere -->
+                <picture class="carte-hotel__img">
+                  <img
+                    src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    alt="Photo de l'Auberge de la Cannebière"
+                  />
+                </picture>
+                <!-- LEGENDE La Cannebiere -->
+                <figcaption class="carte-hotel__legende">
+                  <h3>Auberge la Cannebière</h3>
+                  <p>Nuit à partir de <strong>25€</strong></p>
+                  <p class="legende__icones">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
 
-                        <!-- CARTE-HOTEL Hotel Les mouettes -->
-                        <a href="#" class="conteneur__carte-hotel">
-                            <figure>
-                                <!-- IMAGE Hotel Les mouettes -->
-                                <picture class="carte-hotel__img">
-                                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo de l'Hôtel des Mouettes" />
-                                </picture>
-                                <!-- LEGENDE Hotel Les mouettes -->
-                                <figcaption class="carte-hotel__legende">
-                                    <h3>Hôtel Les mouettes</h3>
-                                    <p>Nuit à partir de <strong>76€</strong></p>
-                                    <p class="legende__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </a>
+            <!-- CARTE-HOTEL Hotel du port -->
+            <a href="#" class="conteneur__carte-hotel">
+              <figure>
+                <!-- IMAGE Hotel du port -->
+                <picture class="carte-hotel__img">
+                  <img
+                    src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                    alt="Photo de l'Hôtel du port"
+                  />
+                </picture>
+                <!-- LEGENDE Hotel du port -->
+                <figcaption class="carte-hotel__legende">
+                  <h3>Hôtel du port</h3>
+                  <p>Nuit à partir de <strong>52€</strong></p>
+                  <p class="legende__icones">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
 
-                        <!-- CARTE-HOTEL Hotel de la mer -->
-                        <a href="#" class="conteneur__carte-hotel">
-                            <figure>
-                                <!-- IMAGE Hotel de la mer -->
-                                <picture class="carte-hotel__img">
-                                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo de l'Hôtel de la Mer" />
-                                </picture>
-                                <!-- LEGENDE Hotel de la mer -->
-                                <figcaption class="carte-hotel__legende">
-                                    <h3>Hôtel de la mer</h3>
-                                    <p>Nuit à partir de <strong>46€</strong></p>
-                                    <p class="legende__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </a>
+            <!-- CARTE-HOTEL Hotel Les mouettes -->
+            <a href="#" class="conteneur__carte-hotel">
+              <figure>
+                <!-- IMAGE Hotel Les mouettes -->
+                <picture class="carte-hotel__img">
+                  <img
+                    src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    alt="Photo de l'Hôtel des Mouettes"
+                  />
+                </picture>
+                <!-- LEGENDE Hotel Les mouettes -->
+                <figcaption class="carte-hotel__legende">
+                  <h3>Hôtel Les mouettes</h3>
+                  <p>Nuit à partir de <strong>76€</strong></p>
+                  <p class="legende__icones">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
 
-                        <!-- CARTE-HOTEL Auberge Le Panier -->
-                        <a href="#" class="conteneur__carte-hotel">
-                            <figure>
-                                <!-- IMAGE Auberge Le Panier -->
-                                <picture class="carte-hotel__img">
-                                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo de l'Auberge le Panier" />
-                                </picture>
-                                <!-- LEGENDE Auberge Le Panier -->
-                                <figcaption class="carte-hotel__legende">
-                                    <h3>Auberge Le Panier</h3>
-                                    <p>Nuit à partir de <strong>23€</strong></p>
-                                    <p class="legende__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                                    </p>
-                                </figcaption>
-                            </figure>                       
-                        </a>
+            <!-- CARTE-HOTEL Hotel de la mer -->
+            <a href="#" class="conteneur__carte-hotel">
+              <figure>
+                <!-- IMAGE Hotel de la mer -->
+                <picture class="carte-hotel__img">
+                  <img
+                    src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                    alt="Photo de l'Hôtel de la Mer"
+                  />
+                </picture>
+                <!-- LEGENDE Hotel de la mer -->
+                <figcaption class="carte-hotel__legende">
+                  <h3>Hôtel de la mer</h3>
+                  <p>Nuit à partir de <strong>46€</strong></p>
+                  <p class="legende__icones">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="far fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
 
-                        <!-- CARTE-HOTEL Hotel chez Amina -->
-                        <a href="#" class="conteneur__carte-hotel">
-                            <figure>
-                                <!-- IMAGE Hotel chez Amina -->
-                                <picture class="carte-hotel__img">
-                                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo de l'hôtel chez Amina" />
-                                </picture>
-                                <!-- LEGENDE Hotel chez Amina -->
-                                <figcaption class="carte-hotel__legende">
-                                    <h3>Hôtel chez Amina</h3>
-                                    <p>Nuit à partir de <strong>96€</strong></p>
-                                    <p class="legende__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </a>
+            <!-- CARTE-HOTEL Auberge Le Panier -->
+            <a href="#" class="conteneur__carte-hotel">
+              <figure>
+                <!-- IMAGE Auberge Le Panier -->
+                <picture class="carte-hotel__img">
+                  <img
+                    src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                    alt="Photo de l'Auberge le Panier"
+                  />
+                </picture>
+                <!-- LEGENDE Auberge Le Panier -->
+                <figcaption class="carte-hotel__legende">
+                  <h3>Auberge Le Panier</h3>
+                  <p>Nuit à partir de <strong>23€</strong></p>
+                  <p class="legende__icones">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
 
-                    </div>
+            <!-- CARTE-HOTEL Hotel chez Amina -->
+            <a href="#" class="conteneur__carte-hotel">
+              <figure>
+                <!-- IMAGE Hotel chez Amina -->
+                <picture class="carte-hotel__img">
+                  <img
+                    src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                    alt="Photo de l'hôtel chez Amina"
+                  />
+                </picture>
+                <!-- LEGENDE Hotel chez Amina -->
+                <figcaption class="carte-hotel__legende">
+                  <h3>Hôtel chez Amina</h3>
+                  <p>Nuit à partir de <strong>96€</strong></p>
+                  <p class="legende__icones">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
 
-                    <!-- CONTENEUR DU LIEN "Afficher plus" -->
-                    <a href="#" class="hebergement-marseille__conteneur--gras">Afficher plus</a>
+          <!-- CONTENEUR DU LIEN "Afficher plus" -->
+          <a href="#" class="hebergement-marseille__conteneur--gras"
+            >Afficher plus</a
+          >
+        </div>
 
-                </div>
+        <!-- LES PLUS POPULAIRES -->
+        <aside class="hebergement-populaire">
+          <h2>
+            Les plus populaires
+            <i
+              class="fas fa-chart-line hebergement-populaire-h2__icone--absolue"
+            ></i>
+          </h2>
 
-                <!-- LES PLUS POPULAIRES -->
-                <aside class="hebergement-populaire">
+          <!-- CONTENEUR DES CARTES-POPULAIRES -->
+          <div class="hebergement-populaire__conteneur">
+            <!-- CARTE-POPULAIRE Hotel Le soleil du matin -->
+            <a href="#" class="conteneur__carte-populaire">
+              <figure>
+                <!-- IMAGE Hotel Le soleil du matin -->
+                <picture class="carte-populaire__img">
+                  <img
+                    src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                    alt="Photo de l'hôtel Le soleil du matin"
+                  />
+                </picture>
+                <!-- LEGENDE Le soleil du matin -->
+                <figcaption class="carte-populaire__legende">
+                  <div class="legende__texte">
+                    <h3>Hôtel Le soleil du matin</h3>
+                    <p>Nuit à partir de <strong>128€</strong></p>
+                  </div>
+                  <p class="legende__icones">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
 
-                    <h2>Les plus populaires <i class="fas fa-chart-line hebergement-populaire-h2__icone--absolue"></i></h2>
-                    
-                    <!-- CONTENEUR DES CARTES-POPULAIRES -->
-                    <div class="hebergement-populaire__conteneur">
+            <!-- CARTE-POPULAIRE Au coeur de l'eau Chambres d'hôtes -->
+            <a href="#" class="conteneur__carte-populaire">
+              <figure>
+                <!-- IMAGE Au coeur de l'eau Chambres d'hôtes -->
+                <picture class="carte-populaire__img">
+                  <img
+                    src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                    alt="Photo des chambres d'hôtes Au coeur de l'eau"
+                  />
+                </picture>
+                <!-- LEGENDE Au coeur de l'eau Chambres d'hôtes -->
+                <figcaption class="carte-populaire__legende">
+                  <div class="legende__texte">
+                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                    <p>Nuit à partir de <strong>71€</strong></p>
+                  </div>
+                  <p class="legende__icones">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
 
-                        <!-- CARTE-POPULAIRE Hotel Le soleil du matin -->
-                        <a href="#" class="conteneur__carte-populaire">
-                            <figure>
-                                <!-- IMAGE Hotel Le soleil du matin -->
-                                <picture class="carte-populaire__img">
-                                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo de l'hôtel Le soleil du matin" />
-                                </picture>
-                                <!-- LEGENDE Le soleil du matin -->
-                                <figcaption class="carte-populaire__legende">
-                                    <div class="legende__texte">
-                                        <h3>Hôtel Le soleil du matin</h3>
-                                        <p>Nuit à partir de <strong>128€</strong></p>
-                                    </div>
-                                    <p class="legende__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </p>
-                                </figcaption>
-                        </figure>
-                        </a>
+            <!-- CARTE-POPULAIRE Hotel Tout bleu et Blanc -->
+            <a href="#" class="conteneur__carte-populaire">
+              <figure>
+                <!-- IMAGE Hotel Tout bleu et Blanc -->
+                <picture class="carte-populaire__img">
+                  <img
+                    src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                    alt="Photo de l'hôtel Tout Bleu et Blanc"
+                  />
+                </picture>
+                <!-- LEGENDE Hotel Tout bleu et Blanc -->
+                <figcaption class="carte-populaire__legende">
+                  <div class="legende__texte">
+                    <h3>Hôtel Tout bleu et Blanc</h3>
+                    <p>Nuit à partir de <strong>68€</strong></p>
+                  </div>
+                  <p class="legende__icones">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </aside>
+      </section>
 
-                        <!-- CARTE-POPULAIRE Au coeur de l'eau Chambres d'hôtes -->
-                        <a href="#" class="conteneur__carte-populaire">
-                            <figure>
-                                <!-- IMAGE Au coeur de l'eau Chambres d'hôtes -->
-                                <picture class="carte-populaire__img">
-                                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo des chambres d'hôtes Au coeur de l'eau" />
-                                </picture>
-                                <!-- LEGENDE Au coeur de l'eau Chambres d'hôtes -->
-                                <figcaption class="carte-populaire__legende">
-                                    <div class="legende__texte">
-                                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                                        <p>Nuit à partir de <strong>71€</strong></p>
-                                    </div>
-                                    <p class="legende__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </a>
+      <!-- SECTION ACTIVITES -->
 
-                        <!-- CARTE-POPULAIRE Hotel Tout bleu et Blanc -->
-                        <a href="#" class="conteneur__carte-populaire">
-                            <figure>
-                                <!-- IMAGE Hotel Tout bleu et Blanc -->
-                                <picture class="carte-populaire__img">
-                                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo de l'hôtel Tout Bleu et Blanc" />
-                                </picture>
-                                <!-- LEGENDE Hotel Tout bleu et Blanc -->
-                                <figcaption class="carte-populaire__legende">
-                                    <div class="legende__texte">
-                                        <h3>Hôtel Tout bleu et Blanc</h3>
-                                        <p>Nuit à partir de <strong>68€</strong></p>
-                                    </div>
-                                    <p class="legende__icones"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </a>
+      <section id="section-activite" class="activite">
+        <h2>Activités à Marseille</h2>
 
-                    </div>
+        <!-- GALERIE D'IMAGES ACTIVITES -->
+        <div class="activite__galerie">
+          <!-- CONTENEUR DE CARTES-ACTIVITE -->
+          <div class="galerie__conteneur">
+            <!-- CARTE-ACTIVITE Grande hauteur -->
+            <a href="#" class="conteneur__carte-activite--liens">
+              <figure
+                class="conteneur__carte-activite conteneur__carte-activite--hauteur-grande"
+              >
+                <!-- IMAGE Galerie Vieux port -->
+                <picture>
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg
+                    "
+                  />
+                  <img
+                    src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                    alt="Photo du Vieux port"
+                  />
+                </picture>
+                <!-- LEGENDE Vieux port -->
+                <figcaption>
+                  <p>Vieux port</p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
 
-                </aside>
+          <!-- CONTENEUR DE CARTES-ACTIVITE AVEC 2 IMAGES -->
+          <div class="galerie__conteneur galerie__conteneur--double-carte">
+            <!-- CARTE-ACTIVITE Moyenne hauteur-->
+            <a href="#" class="conteneur__carte-activite--liens">
+              <figure
+                class="conteneur__carte-activite conteneur__carte-activite--hauteur-moyenne"
+              >
+                <!-- IMAGE Galerie Pomègues -->
+                <picture>
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg
+                    "
+                  />
+                  <img
+                    src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                    alt="Photo du Fort de Pomègues"
+                  />
+                </picture>
+                <!-- LEGENDE Pomègues -->
+                <figcaption>
+                  <p>Fort de Pomègues</p>
+                </figcaption>
+              </figure>
+            </a>
 
-            </section>
+            <!-- CARTE-ACTIVITE Petite hauteur -->
+            <a href="#" class="conteneur__carte-activite--liens">
+              <figure
+                class="conteneur__carte-activite conteneur__carte-activite--hauteur-petite"
+              >
+                <!-- IMAGE Galerie Frioul -->
+                <picture>
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg
+                    "
+                  />
+                  <img
+                    src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                    alt="Photo des îles du Frioul"
+                  />
+                </picture>
+                <!-- LEGENDE Frioul -->
+                <figcaption>
+                  <p>Îles du Frioul</p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
 
-            <!-- SECTION ACTIVITES -->
+          <!-- CONTENEUR DE CARTES-ACTIVITE -->
+          <div class="galerie__conteneur">
+            <!-- CARTE-ACTIVITE Grande hauteur-->
+            <a href="#" class="conteneur__carte-activite--liens">
+              <figure
+                class="conteneur__carte-activite conteneur__carte-activite--hauteur-grande"
+              >
+                <!-- IMAGE Galerie Calanques -->
+                <picture>
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg
+                    "
+                  />
+                  <img
+                    src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                    alt="Photo du Parc National des Calanques"
+                  />
+                </picture>
+                <!-- LEGENDE Calanques -->
+                <figcaption>
+                  <p>Parc National des Calanques</p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
 
-            <section id="section-activite" class="activite">
-                <h2>Activités à Marseille</h2>
+          <!-- CONTENEUR DE CARTES-ACTIVITE AVEC 2 IMAGES -->
+          <div class="galerie__conteneur galerie__conteneur--double-carte">
+            <!-- CARTE-ACTIVITE Petite hauteur-->
+            <a href="#" class="conteneur__carte-activite--liens">
+              <figure
+                class="conteneur__carte-activite conteneur__carte-activite--hauteur-petite"
+              >
+                <!-- IMAGE Galerie Notre-Dame -->
+                <picture>
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg
+                    "
+                  />
+                  <img
+                    src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                    alt="Photo de Notre-Dame-de-la-Garde"
+                  />
+                </picture>
+                <!-- LEGENDE Notre-Dame -->
+                <figcaption>
+                  <p>Notre-Dame-de-la-Garde</p>
+                </figcaption>
+              </figure>
+            </a>
 
-                <!-- GALERIE D'IMAGES ACTIVITES -->
-                <div class="activite__galerie">
+            <!-- CARTE-ACTIVITE Moyenne hauteur -->
+            <a href="#" class="conteneur__carte-activite--liens">
+              <figure
+                class="conteneur__carte-activite conteneur__carte-activite--hauteur-moyenne"
+              >
+                <!-- IMAGE Galerie Longchamps -->
+                <picture>
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg
+                    "
+                  />
+                  <img
+                    src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                    alt="Photo du Parc Longchamp"
+                  />
+                </picture>
+                <!-- LEGENDE Longchamps -->
+                <figcaption>
+                  <p>Parc Longchamp</p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-                    <!-- CONTENEUR DE CARTES-ACTIVITE -->
-                    <div class="galerie__conteneur">
+    <!-- PIED DE PAGE -->
 
-                        <!-- CARTE-ACTIVITE Grande hauteur -->
-                        <a href="#" class="conteneur__carte-activite--liens">
-                            <figure class="conteneur__carte-activite conteneur__carte-activite--hauteur-grande">
-                                <!-- IMAGE Galerie Vieux port -->
-                                <picture>
-                                    <source media="(max-width:767px)" srcset="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                                    <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du Vieux port" />
-                                </picture>
-                                <!-- LEGENDE Vieux port -->
-                                <figcaption>
-                                    <p>Vieux port</p>
-                                </figcaption>
-                            </figure>
-                        </a>
+    <footer>
+      <div class="pied-de-page">
+        <!-- PIED DE PAGE CONTENEUR "A propos" -->
+        <div class="pied-de-page__conteneur">
+          <p><span class="conteneur__paragraphe--gras">A propos</span></p>
+          <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialités</a></li>
+          </ul>
+        </div>
 
-                    </div>
+        <!-- PIED DE PAGE CONTENEUR "Nos hébergements" -->
+        <div class="pied-de-page__conteneur">
+          <p>
+            <span class="conteneur__paragraphe--gras">Nos hébergements</span>
+          </p>
+          <ul>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+          </ul>
+        </div>
 
-                    <!-- CONTENEUR DE CARTES-ACTIVITE AVEC 2 IMAGES -->
-                    <div class="galerie__conteneur galerie__conteneur--double-carte">
-
-                        <!-- CARTE-ACTIVITE Moyenne hauteur-->
-                        <a href="#" class="conteneur__carte-activite--liens">
-                            <figure class="conteneur__carte-activite conteneur__carte-activite--hauteur-moyenne">
-                                <!-- IMAGE Galerie Pomègues -->
-                                <picture>
-                                    <source media="(max-width:767px)" srcset="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                                    <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du Fort de Pomègues" />
-                                </picture>
-                                <!-- LEGENDE Pomègues -->
-                                <figcaption>
-                                    <p>Fort de Pomègues</p>
-                                </figcaption>
-                            </figure>
-                        </a>
-
-                        <!-- CARTE-ACTIVITE Petite hauteur -->
-                        <a href="#" class="conteneur__carte-activite--liens">
-                            <figure class="conteneur__carte-activite conteneur__carte-activite--hauteur-petite">
-                                <!-- IMAGE Galerie Frioul -->
-                                <picture>
-                                    <source media="(max-width:767px)" srcset="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                                    <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo des îles du Frioul" />
-                                </picture>
-                                <!-- LEGENDE Frioul -->
-                                <figcaption>
-                                    <p>Îles du Frioul</p>
-                                </figcaption>
-                            </figure>
-                        </a>
-
-                    </div>
-
-                    <!-- CONTENEUR DE CARTES-ACTIVITE -->
-                    <div class="galerie__conteneur">
-
-                        <!-- CARTE-ACTIVITE Grande hauteur-->
-                        <a href="#" class="conteneur__carte-activite--liens">
-                            <figure class="conteneur__carte-activite conteneur__carte-activite--hauteur-grande">
-                                <!-- IMAGE Galerie Calanques -->
-                                <picture>
-                                    <source media="(max-width:767px)" srcset="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-                                    <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo du Parc National des Calanques" />
-                                </picture>
-                                <!-- LEGENDE Calanques -->
-                                <figcaption>
-                                    <p>Parc National des Calanques</p>
-                                </figcaption>
-                            </figure>
-                        </a>
-
-                    </div>
-
-                    <!-- CONTENEUR DE CARTES-ACTIVITE AVEC 2 IMAGES -->
-                    <div class="galerie__conteneur galerie__conteneur--double-carte">
-
-                        <!-- CARTE-ACTIVITE Petite hauteur-->
-                        <a href="#" class="conteneur__carte-activite--liens">
-                            <figure class="conteneur__carte-activite conteneur__carte-activite--hauteur-petite">
-                                <!-- IMAGE Galerie Notre-Dame -->
-                                <picture>
-                                    <source media="(max-width:767px)" srcset="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-                                    <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo de Notre-Dame-de-la-Garde" />
-                                </picture>
-                                <!-- LEGENDE Notre-Dame -->
-                                <figcaption>
-                                    <p>Notre-Dame-de-la-Garde</p>
-                                </figcaption>
-                            </figure>
-                        </a>
-
-                        <!-- CARTE-ACTIVITE Moyenne hauteur -->
-                        <a href="#" class="conteneur__carte-activite--liens">
-                            <figure class="conteneur__carte-activite conteneur__carte-activite--hauteur-moyenne">
-                                <!-- IMAGE Galerie Longchamps -->
-                                <picture>
-                                    <source media="(max-width:767px)" srcset="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-                                    <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo du Parc Longchamp" />
-                                </picture>
-                                <!-- LEGENDE Longchamps -->
-                                <figcaption>
-                                    <p>Parc Longchamp</p>
-                                </figcaption>
-                            </figure>
-                        </a>
-
-                    </div>
-
-                </div>
-            </section>            
-        </main>
-
-        <!-- PIED DE PAGE -->
-
-        <footer>
-            <div class="pied-de-page">
-
-                <!-- PIED DE PAGE CONTENEUR "A propos" -->
-                <div class="pied-de-page__conteneur">
-                    <p><span class="conteneur__paragraphe--gras">A propos</span></p>
-                    <ul>
-                        <li><a href="#">Fonctionnement du site</a></li>
-                        <li><a href="#">Conditions générales de vente</a></li>
-                        <li><a href="#">Données et confidentialités</a></li>
-                    </ul>
-                </div>
-
-                <!-- PIED DE PAGE CONTENEUR "Nos hébergements" -->
-                <div class="pied-de-page__conteneur">
-                    <p><span class="conteneur__paragraphe--gras">Nos hébergements</span></p>
-                    <ul>
-                        <li><a href="#">Charte qualité</a></li>
-                        <li><a href="#">Soumettre votre hôtel</a></li>
-                    </ul>
-                </div>
-
-                <!-- PIED DE PAGE CONTENEUR "Assistance" -->
-                <div class="pied-de-page__conteneur">
-                    <p><span class="conteneur__paragraphe--gras">Assistance</span></p>
-                    <ul>
-                        <li><a href="#">Centre d'aide</a></li>
-                        <li><a href="mailto:#">Nous contacter</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </footer>
-
-    </body>
+        <!-- PIED DE PAGE CONTENEUR "Assistance" -->
+        <div class="pied-de-page__conteneur">
+          <p><span class="conteneur__paragraphe--gras">Assistance</span></p>
+          <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="mailto:#">Nous contacter</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
